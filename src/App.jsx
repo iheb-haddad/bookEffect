@@ -27,7 +27,8 @@ const App = () => {
   }
 
   return (
-    <div className={`app ${finished && 'sucessBox'}`}>
+    <div className={`app ${finished && 'sucessBox'}`}
+    style={{backgroundImage : 'background-image: linear-gradient(rgba(199, 150, 150, 0.7),rgba(199, 150, 150, 0.7)),url("./background.jpg")'}}>
       {!finished ? 
         <div className="book">
           {/* If page 2 is opened, display the ingredients page */}
