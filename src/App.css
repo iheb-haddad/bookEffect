@@ -1,0 +1,50 @@
+@import 'typeface-montserrat';
+
+.app{
+  padding-right: 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: "Montserrat",sans-serif;
+  letter-spacing: 1px;
+  background-image: linear-gradient(rgba(199, 150, 150, 0.7),rgba(199, 150, 150, 0.7)),url('./background.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+.sucessBox{
+  justify-content: center;
+  padding: 0;
+}
+.book{
+  display: flex;
+}
+.page1{
+  position: relative;
+  border-radius: 30px;
+}
+.successfulMsg{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: smoothDisplay 1s ease-in-out;
+}
+.successfulMsg h1{
+  font-size: 1.5rem;
+  color: #fff;
+  margin-top: 20px;
+}
+.successfulMsg .checkIcon{
+  font-size: 3rem;
+  color: #286c36;
+  margin-top: 20px;
+  cursor: pointer;
+}
+@keyframes smoothDisplay {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+}
+}

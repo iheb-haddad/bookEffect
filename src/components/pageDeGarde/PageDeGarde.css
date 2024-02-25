@@ -1,0 +1,171 @@
+.page{
+    display: flex;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    overflow: hidden;
+}
+.pageMarge{
+    background-color: rgb(194, 194, 194);
+    min-width: 40px;
+}
+.pageBody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 60px;
+    width: 500px;
+    height: 600px;
+    padding-bottom: 20px;
+    padding-top: 40px;
+    position: relative;
+}
+.conservationBox{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-top: 20px;
+}
+.conservationBox label{
+    font-size: 1rem;
+    color: #d0cece;
+}
+.conservationBody{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    color: gray;
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+}
+.consIcon{
+    cursor: pointer;
+    color: #d0cece;
+}
+.pageBody input{
+    border: none;
+    border-bottom: 1px solid gray;
+    background-color: transparent;
+    width: 60%;
+    margin-bottom: 20px;
+    outline: none;
+}
+.pageBody input::placeholder{
+    color: #cfcfcf;
+    font-size: 1rem;
+}
+.notesBox{
+    display: flex;
+    flex-direction: column;
+}
+.pageBody select{
+    border: none;
+    background-color: #f3f3f3;
+    padding: 5px 8px;
+    border-radius: 15px;
+    color: gray;
+    outline: none;
+}
+.pageBody option:active{
+    background-color: #c0b7b7;
+}
+
+.switcher{
+    width: 60px;
+    height: 20px;
+}
+.notesBox{
+    color: #d0cece;
+    width: 100%;
+    min-height: 40%;
+    margin-bottom: 60px;
+}
+.pageBody textarea{
+    margin-top: 5px;
+    border: none;
+    background-color: #f3f3f3;
+    border-radius: 20px;
+    min-height: 100%;
+    outline: none;
+}
+.pageBody button{
+    background-color: transparent;
+    padding: 5px 30px;
+    border-radius: 20px;
+    color: gray;
+    cursor: pointer;
+    font-size: 1rem;
+    border: 3px solid gray;
+}
+#catSelect{
+    width: 40%;
+    margin-bottom: 40px;
+}
+#unitSelect{
+    width: 100px;
+}
+.toggleBox{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.toggleBox label{
+    font-size: 0.8rem;
+    color: #8f8e8e;
+    font-weight: 600;
+}
+.iconNext{
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    color: #8e8b8b;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+.isClosing1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: flip 1s ease-in-out;
+    z-index: 1;
+}
+@keyframes flip {
+    from{
+        transform: rotate3d(0, -1, 0, 0deg);
+        transform-origin: left;
+        opacity: 1;
+    }
+    then{
+        transform: rotate3d(0, -1, 0, 120deg);
+        transform-origin: left;
+        opacity: 1;
+    }
+    to{
+        transform: rotate3d(0, -1, 0, 145deg);
+        transform-origin: left;
+        opacity: 0;
+    }
+}
+@keyframes open {
+    from{
+        transform: rotate3d(0, -1, 0, 90deg);
+        transform-origin: left;
+    }
+    to{
+        transform: rotate3d(0, -1, 0, 0deg);
+        transform-origin: left;
+    }
+}
+.isOpening1{
+    animation: open 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}

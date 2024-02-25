@@ -1,0 +1,100 @@
+.ingredientsList{
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.ingredientHeadList{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ingredientName, .ingredientQuantity{
+    font-size: 1rem;
+    color: #6a6767;
+    font-weight: 800;
+    width: 30%;
+}
+.ingredientPrice{
+    font-size: 1rem;
+    color: #cac7c7;
+    font-weight: 800;
+}
+.searchBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    background-color: #eaeaea;
+    border-radius: 20px;
+    height: 20px;
+    padding-left: 8px;
+}
+.searchBox input{
+    width: 85%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+.searchIcon{
+    font-size: 0.6rem;
+    color: #6a6767;
+}
+.headPage{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap : 10px;
+}
+.pageFooter{
+    margin-top: 50px;
+    text-align: center;
+}
+.pageFooter label{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #cac7c7;
+}
+.total{
+    font-size: 1rem;
+    font-weight: 700;
+    color: #979595;
+}
+.iconPreced{
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    color: #8e8b8b;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transform: rotateY(180deg);
+}
+.initialPosition{
+    transform: rotate3d(0, -1, 0, 90deg);
+}
+.isOpening2{
+    transition: transform 0.7s;
+    transform: rotate3d(0, -1, 0, 0deg);
+    transform-origin: right;
+}
+@keyframes flip2 {
+    from{
+        transform: rotate3d(0, -1, 0, 0deg);
+        transform-origin: right;
+        opacity: 1;
+    }
+    then{
+        transform: rotate3d(0, -1, 0, 120deg);
+        transform-origin: right;
+        opacity: 1;
+    }
+    to{
+        transform: rotate3d(0, -1, 0, 145deg);
+        transform-origin: right;
+        opacity: 0;
+    }
+}
+.isClosing2{
+    animation: flip2 0.9s ease-in-out;
+}

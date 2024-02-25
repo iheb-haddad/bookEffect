@@ -1,0 +1,5 @@
+export { default as PageDeGarde } from './pageDeGarde/PageDeGarde'
+export { default as IngredientsPage } from './ingredientsPage/IngredientsPage'
+export { default as Ingredient } from './ingredient/Ingredient'
+export { default as ProcessesPage } from './processesPage/ProcessesPage'
+export { default as Process } from './process/Process'

@@ -1,0 +1,53 @@
+.ingredientName{
+    text-align: right;
+    width: 55%;
+    padding: 10px 20px 10px 0;
+}
+.ingredientQuantity{
+    text-align: left;
+    width: 22%;
+    padding: 10px 40px 10px 0;
+    position: relative;
+}
+.ingredientPrice{
+    text-align: right;
+    width: 13%;
+}
+.ingredient .ingredientName{
+    font-size: 0.9rem;
+    color: #8f8e8e;
+    font-weight: 600;
+}
+.ingredient .ingredientQuantity{
+    border-left: 1px solid #8f8e8e;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+.ingredient .ingredientPrice{
+    font-size: 0.9rem;
+    color: #d1cdcd;
+    font-weight: 600;
+}
+.ingredient svg{
+    width: 8px;
+    color :#8f8e8e;
+    margin-left: -5px;
+    margin-right: 15px;
+    background-color: rgb(232, 227, 227);
+}
+.gradientTop{
+    width: 1px;
+    background-color: rgb(255, 255, 255);
+    height: 44%;
+    position: absolute;
+    left: -1px;
+    top : 0;
+}
+.gradientBottom{
+    width: 1px;
+    background-color: rgb(255, 255, 255);
+    height: 37%;
+    position: absolute;
+    left: -1px;
+    bottom : 0;
+}

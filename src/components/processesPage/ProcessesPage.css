@@ -1,0 +1,36 @@
+.processesList{
+    width: 100%;
+    text-align: center;
+}
+.headPage{
+    margin-bottom: 20px;
+}
+.headTitle{
+    font-weight: 700;
+    color: #6f6f6f;
+}
+.headPage .title{
+    font-size: 1.rem;
+    color: #6f6f6f;
+    font-weight: 500;
+}
+.buttons{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 60px;
+}
+.buttons .ajouter{
+    color: #286c36;
+    border-color: #286c36;
+}
+.plus{
+    margin-top: 10px;
+    color: #6f6f6f;
+}
+.ajouter:active{
+    background-color: #286c36;
+    color: white;
+}
